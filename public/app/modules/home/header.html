@@ -1,0 +1,42 @@
+
+ <!-- <div class="navbar-fixed">
+
+   <nav class="light-blue lighten-4" role="navigation" ng-controller="adminCtrl">
+  		<div class="nav-wrapper container">
+  			<a id="logo-container" href="#" class="brand-logo">{{siteData.logo}}</a>
+  			<ul class="right hide-on-med-and-down">
+              
+
+  			  <li><button type="button" class="btn btn-primary" ng-click="signOut()"><a ng-href="#/home">Signout</a></li></button>
+
+  			</ul>
+  		</div>
+  	</nav>
+
+
+  </div> -->
+<ul id="dropdown1" class="dropdown-content" ng-controller="adminCtrl">
+  <li><a href="#!">one</a></li>
+  <li><a href="#!">two</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">three</a></li>
+</ul>
+
+  <nav class="nav-extended" ng-controller="adminCtrl">
+  	<div class="nav-wrapper" style="padding-bottom: 20px;">
+  		<div class="nav-content" style="padding-bottom: 20px;">
+  			<ul class="tabs tabs-transparent">
+  				<li class="tab" style="margin-bottom: 40px; margin-right: 200px;"><a href="#"><h3 style="margin-bottom: 40px;">OneLink</h3></a></li>
+  				<li class="tab" ><a href="#">My profile</a></li>
+  				<li class="tab"><a href="#">Contacts</a></li>
+  				<li class="tab"><a href="#">Notification</a></li>
+  				<li class="tab"><a href="#">Meetings</a></li>
+                <li >
+                   <a ng-focus="drop()" class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a>
+                </li>
+  				<!-- <li style="margin-left: 200px"><a class="waves-effect waves-light btn" ng-href="#/home" ng-click="signOut()">Signout</a></li> -->
+
+  			</ul>
+  		</div>
+  	</div>
+  </nav>

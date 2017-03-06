@@ -1,0 +1,51 @@
+<div class="container" style="padding-top: 60px; padding-left: 250px;">
+  <form style="background: white; padding: 50px; width: 450px;" ng-submit="signUp()" >
+    <h5>Sign Up for an Account</h5>  <h5  style="color:{{resultColor}}" ng-bind="result"></h5>
+
+    <div class="input-field col s6">
+      <i class="material-icons prefix">account_circle</i>
+      <input id="icon_prefix" type="text" class="validate" ng-model="full_name" ng-focus="is = false" required>
+      <label for="icon_prefix">Full name</label>
+    </div>
+    <div class="input-field col s6">
+     <i class="material-icons prefix">phone</i>
+     <input id="icon_phone" type="text" class="validate" ng-model="phone" ng-focus="is = false" required>
+     <label for="icon_phone">Phone</label>
+   </div>
+
+   <div class="input-field col s6">
+    <i class="material-icons prefix">home</i>
+    <input id="icon_address" type="text"  ng-model="address" ng-focus="is = false" required>
+    <label for="icon_address">Address</label>
+  </div>
+  <div class="input-field col s6">
+    <i class="material-icons prefix">email</i>
+    <input  id="icon_emaill" type="text" class="validate" ng-model="email" ng-focus="is = false" required>
+    <label for="icon_emaill">Email</label>
+  </div> 
+
+
+  <div class="input-field col s6">
+    <i class="material-icons prefix">lock</i>
+    <input  id="password" type="password" class="validate" ng-model="pass" ng-focus="is = false" required>
+    <label for="password">Password</label>
+  </div>
+
+
+  <div class="container"> 
+    <button type="submit" class="btn waves-effect waves-light" style="margin-right: 95px;" ng-focus="is = true">Signup</button> 
+
+    <!-- <button type="button" class="btn waves-effect waves-light " ng-click="form1 = false">Log In</button>  -->
+
+
+
+  </div>
+</form>
+<div ng-show="is" class="progress">
+  <div class="indeterminate"></div>
+</div>
+</div>
+</div>
+</div>
+
+
